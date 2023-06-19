@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dan's Portfolio</title>
+    <style>
+      #banner {
+        width: 100%;
+        height: 360px;
+        object-fit: cover;
+      }
+    </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+  </head>
+  <body>
+    <div class=container>
+    <h1>Hello.</h1>
+    <img class="img-fluid" id="banner" src="https://plus.unsplash.com/premium_photo-1686865496819-0607cd604fd1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1760&q=80">
+    <h2>Second hello</h2>
+    <div>
+    {% for job in jobs %}
+    {% include 'jobitem.html' %}  
+    {% endfor %}
+    </div>
+  </div>
+  </body>
+</html>
